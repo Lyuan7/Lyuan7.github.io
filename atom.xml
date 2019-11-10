@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyuan7.github.io/</id>
     <title>Lyuan7</title>
-    <updated>2019-11-10T13:47:49.035Z</updated>
+    <updated>2019-11-10T13:56:48.220Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyuan7.github.io/"/>
     <link rel="self" href="https://lyuan7.github.io//atom.xml"/>
@@ -16,6 +16,10 @@
         <link href="https://lyuan7.github.io//post/lu-xun-yu-kong-yi-ji">
         </link>
         <updated>2019-11-10T12:04:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>之前看《孔乙己》总是从现代的眼光去批判『孔乙己』，说他迂腐，是旧社会的牺牲品。后来听了老师对《孔乙己》一文的分析，有点醍醐灌顶的感觉。遂翻了翻鲁迅先生的生平，重新读了一遍《孔乙己》，对鲁迅愈发的敬重了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>之前看《孔乙己》总是从现代的眼光去批判『孔乙己』，说他迂腐，是旧社会的牺牲品。后来听了老师对《孔乙己》一文的分析，有点醍醐灌顶的感觉。遂翻了翻鲁迅先生的生平，重新读了一遍《孔乙己》，对鲁迅愈发的敬重了。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown]]></title>
@@ -23,6 +27,12 @@
         <link href="https://lyuan7.github.io//post/markdown">
         </link>
         <updated>2019-11-10T11:50:16.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="我为什么选择了-markdown"><strong>我为什么选择了 Markdown</strong></h2>
+<p>因为一直要码字儿而且仅需要简单地排版的缘故，office word 那强大功能与不怎么美观的界面实在是不得我心. 于是就另寻他欢，找到了 Markdown.</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="我为什么选择了-markdown"><strong>我为什么选择了 Markdown</strong></h2>
+<p>因为一直要码字儿而且仅需要简单地排版的缘故，office word 那强大功能与不怎么美观的界面实在是不得我心. 于是就另寻他欢，找到了 Markdown.</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[clash的使用及一些感触]]></title>
@@ -37,6 +47,12 @@
         <link href="https://lyuan7.github.io//post/gui-hua">
         </link>
         <updated>2019-11-10T11:19:38.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="写在前面的话">写在前面的话</h3>
+<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="写在前面的话">写在前面的话</h3>
+<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
