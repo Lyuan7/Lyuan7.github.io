@@ -2,22 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyuan7.github.io/</id>
     <title>Lyuan7</title>
-    <updated>2019-11-11T04:12:32.842Z</updated>
+    <updated>2019-11-11T04:13:50.039Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyuan7.github.io/"/>
     <link rel="self" href="https://lyuan7.github.io//atom.xml"/>
-    <subtitle>&lt;span id=&apos;gushici&apos;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
-&lt;span id=&apos;zuozhe&apos;&gt;&lt;/span&gt;
+    <subtitle>&lt;span id=&apos;dongmanjuzi&apos;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&apos;dongmanlaiyuan&apos;&gt;&lt;/span&gt;
 &lt;script&gt;
-    let xhrGushi = new XMLHttpRequest();
-    xhrGushi.open(&apos;get&apos;, &apos;https://api.gushi.ci/all.json&apos;);
-    xhrGushi.onreadystatechange = function () {
-        if (xhrGushi.readyState === 4) {
-            let dataGushi = JSON.parse(xhrGushi.responseText);
-            document.getElementById(&apos;gushici&apos;).innerText = dataGushi.content;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&apos;get&apos;, &apos;https://v1.hitokoto.cn/?c=a&amp;encode=json&apos;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&apos;dongmanjuzi&apos;).innerText = dataAmine.hitokoto;
+
         }
     };
-    xhrGushi.send();
+    xhrAmine.send();
 &lt;/script&gt;</subtitle>
     <logo>https://lyuan7.github.io//images/avatar.png</logo>
     <icon>https://lyuan7.github.io//favicon.ico</icon>
