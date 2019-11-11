@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyuan7.github.io/</id>
     <title>Lyuan7</title>
-    <updated>2019-11-11T01:37:36.381Z</updated>
+    <updated>2019-11-11T04:12:32.842Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyuan7.github.io/"/>
     <link rel="self" href="https://lyuan7.github.io//atom.xml"/>
-    <subtitle>寻求内心深处的宁静</subtitle>
+    <subtitle>&lt;span id=&apos;gushici&apos;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&apos;zuozhe&apos;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrGushi = new XMLHttpRequest();
+    xhrGushi.open(&apos;get&apos;, &apos;https://api.gushi.ci/all.json&apos;);
+    xhrGushi.onreadystatechange = function () {
+        if (xhrGushi.readyState === 4) {
+            let dataGushi = JSON.parse(xhrGushi.responseText);
+            document.getElementById(&apos;gushici&apos;).innerText = dataGushi.content;
+        }
+    };
+    xhrGushi.send();
+&lt;/script&gt;</subtitle>
     <logo>https://lyuan7.github.io//images/avatar.png</logo>
     <icon>https://lyuan7.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Lyuan7</rights>
