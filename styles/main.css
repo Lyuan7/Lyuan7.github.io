@@ -2585,6 +2585,9 @@ video {
 .inline {
   display: inline;
 }
+.flex {
+  display: flex;
+}
 .inline-flex {
   display: inline-flex;
 }
@@ -2629,6 +2632,9 @@ video {
 }
 .items-baseline {
   align-items: baseline;
+}
+.item-center {
+  align-items: center;
 }
 .items-stretch {
   align-items: stretch;
@@ -4009,6 +4015,9 @@ video {
 .p-3 {
   padding: 0.75rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-5 {
   padding: 1.25rem;
 }
@@ -4440,6 +4449,9 @@ video {
 .static {
   position: static;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -4486,6 +4498,9 @@ video {
 }
 .right-auto {
   right: auto;
+}
+.right-0 {
+  right: 0;
 }
 .bottom-auto {
   bottom: auto;
@@ -6469,7 +6484,7 @@ body {
   bottom: 0;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #fff6e3;
   padding: 24px;
   transition: all 0.35s ease-in-out;
   z-index: 1000;
