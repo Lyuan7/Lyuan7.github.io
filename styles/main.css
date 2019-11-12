@@ -399,6 +399,7 @@ html {
   border-width: 0;
   border-style: solid;
   border-color: #e2e8f0;
+  background-image: url('https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/leaves-pattern.png');
 }
 /**
  * Undo the `border-style: none` reset that Normalize applies to images so that
@@ -565,7 +566,7 @@ video {
   background-color: #000;
 }
 .bg-white {
-  background-color: #f5f4f1;
+  background-color: #fff6e3;
 }
 .bg-gray-100 {
   background-color: #f7fafc;
@@ -6516,11 +6517,13 @@ body {
   padding: 24px;
   font-size: 12px;
   text-align: center;
-  background: #fff;
+  background: #F5F4F1;
+  background-image: url('https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/leaves-pattern.png');
 }
 .menu-container.open {
   left: 0px;
   box-shadow: 5px 0px 36px rgba(0, 0, 0, 0.1);
+  background-image: url('https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/leaves-pattern.png');
 }
 .menu-container .menu {
   display: block;
