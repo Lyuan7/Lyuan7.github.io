@@ -398,7 +398,7 @@ html {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: #e2e8f0;
+  border-color: #F5F4F1;
   background-image: url('https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/leaves-pattern.png');
 }
 /**
@@ -566,7 +566,7 @@ video {
   background-color: #000;
 }
 .bg-white {
-  background-color: #fff6e3;
+  background-color: #F5F4F1;
 }
 .bg-gray-100 {
   background-color: #f7fafc;
@@ -6497,7 +6497,7 @@ body {
   bottom: 0;
   display: flex;
   align-items: center;
-  background: #fff6e3;
+  background: #F5F4F1;
   padding: 24px;
   transition: all 0.35s ease-in-out;
   z-index: 1000;
