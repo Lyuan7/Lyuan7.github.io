@@ -1,100 +1,224 @@
-<html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title></title>
-<link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<script src="https://lyuan7.github.io//media/script.js"></script>
-
-    
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title></title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Lyuan7</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="&lt;span id=&#39;dongmanjuzi&#39;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&#39;dongmanlaiyuan&#39;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&#39;get&#39;, &#39;https://v1.hitokoto.cn/?c=a&amp;encode=json&#39;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&#39;dongmanjuzi&#39;).innerText = dataAmine.hitokoto;
+            document.getElementById(&#39;dongmanlaiyuan&#39;).innerText = &#39;——&#39; + &#39;《&#39; + dataAmine.from+ &#39;》&#39;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;"/>
+<meta name="keywords" content="&lt;span id=&#39;dongmanjuzi&#39;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&#39;dongmanlaiyuan&#39;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&#39;get&#39;, &#39;https://v1.hitokoto.cn/?c=a&amp;encode=json&#39;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&#39;dongmanjuzi&#39;).innerText = dataAmine.hitokoto;
+            document.getElementById(&#39;dongmanlaiyuan&#39;).innerText = &#39;——&#39; + &#39;《&#39; + dataAmine.from+ &#39;》&#39;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;"/>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico">
+
 <link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<script src="https://lyuan7.github.io//media/script.js"></script>
+
+<!-- Modernizr JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://lyuan7.github.io//media/scripts/_vendors/respond.min.js"></scripts>
+<![endif]-->
+
+<!-- Comment -->
+
+    
+        <link href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css" rel="stylesheet">
+    
 
     
 
-  <script src="https://lyuan7.github.io//media/prism.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
+
 </head>
 <body>
-  <div class="antialiased">
-    <div class="max-w-5xl mx-auto px-6 md:px-8">
-      <div class="flex justify-between items-center mt-10">
-  <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-900 font-medium md:font-normal leading-none">
-    <a href="https://lyuan7.github.io/">Lyuan7</a>
-  </h1>
-  <div class="block lg:hidden" id="thumb-menu">
-    <button id="thumb-open" type="button" class="block">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6H22V7H2V6ZM2 12H22V13H2V12ZM22 18H2V19H22V18Z" class="fill-current text-gray-900"></path></svg>
-    </button>
-    <button id="thumb-close" type="button" class="hidden">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L20 20M20 4L4 20" class="" stroke="#1A202C"></path></svg>
-    </button>
-  </div>
-</div>
-<div id="nav-list" class="lg:block hidden">
-  <div class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 mt-10 text-gray-700 font-medium lg:text-lg">
-    <div class="lg:flex -mb-px">
-      
-        
-          <a href="/" class="nav-link">首页</a>
-        
-      
-        
-          <a href="/archives" class="nav-link">归档</a>
-        
-      
-        
-          <a href="/tags" class="nav-link">标签</a>
-        
-      
-        
-          <a href="/post/about" class="nav-link">关于</a>
-        
-      
+    <div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
+    </a>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://lyuan7.github.io//media/images/avatar.png" alt="Lyuan7"
+                 class="img-responsive">
+        </figure>
+        <a href="https://lyuan7.github.io//post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>Lyuan7</h2>
+        <p>&lt;span id=&#39;dongmanjuzi&#39;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&#39;dongmanlaiyuan&#39;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&#39;get&#39;, &#39;https://v1.hitokoto.cn/?c=a&amp;encode=json&#39;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&#39;dongmanjuzi&#39;).innerText = dataAmine.hitokoto;
+            document.getElementById(&#39;dongmanlaiyuan&#39;).innerText = &#39;——&#39; + &#39;《&#39; + dataAmine.from+ &#39;》&#39;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
     </div>
-    <div class="lg:flex">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      <a href="https://lyuan7.github.io//atom.xml" class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900" target="_blank">
-        <div>RSS</div>
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 -mt-px"><path d="M16.5 13V18.5H6.5V8.5H12" stroke="#4A5568"></path> <path d="M10 15L18.5 6.5" stroke="#4A5568"></path> <path d="M14 6.5H18.5V11" stroke="#4A5568"></path></svg>
-      </a>
+
+    <div class="fh5co-menu">
+
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://lyuan7.github.io//tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://lyuan7.github.io//tag/GtPTOJJeN">生活</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/C5g19vMWg">杂谈</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/bDemL2UkG">学习笔记</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/yr08VCzOL">Gridea</a></li>
+                
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-      <div class="mb-20 md:flex mt-10 lg:mt-6 md:border-t md:border-gray-400 md:pt-2 lg:border-t-0 lg:pt-0">
-        <div class="w-full md:w-2/3 mt-6">
-          <h1 class="text-4xl">clash的使用及一些感触</h1>
-          
-            <img class="max-w-full mt-6 rounded-sm" src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/68375845_p0.png" alt="">
-          
-          <div class="mt-6 lg:mt-10 post-content">
-            <p>这几天一直在捣鼓clash的使用方法，clash是一款类 Surge 的产品。在原生使用的过程中只能通过命令行进行操控，门槛高，不方便。后来有了 ClashX在Mac端的图形界面，以及Fndroid开发的Clash for Windows图形界面(在此感谢F大的成果)。极大的降低了使用门槛，并将使用变得更加简单有效率。</p>
+
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a href="/"
+                        
+                        >
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives"
+                        
+                        >
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags"
+                        
+                        >
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/post/about"
+                        
+                        >
+                            关于
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a href="https://lyuan7.github.io/">Lyuan7 </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
+
+    <!-- 等gridea出自定义页面功能再优化一下 -->
+    
+        <div class="container-fluid">
+    <div class="row fh5co-post-entry single-entry">
+        <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+            <figure class="animate-box">
+                
+                    <img src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/68375845_p0.png" alt="clash的使用及一些感触" class="img-responsive">
+                
+            </figure>
+            <span class="fh5co-meta animate-box">
+                
+                    <div class="tag-container">
+                        
+                            <a href="https://lyuan7.github.io//tag/bDemL2UkG" class="tag">学习笔记, </a>
+                        
+                    </div>
+                
+            </span>
+            <h2 class="fh5co-article-title animate-box">clash的使用及一些感触</h2>
+            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
+                <li>2019-11-10</li>
+                <li>929字</li>
+                <li>4 min read</li>
+            </ol>
+
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                <div class="row">
+                    <div class="col-md-12 animate-box post-content">
+                        <p> <p>这几天一直在捣鼓clash的使用方法，clash是一款类 Surge 的产品。在原生使用的过程中只能通过命令行进行操控，门槛高，不方便。后来有了 ClashX在Mac端的图形界面，以及Fndroid开发的Clash for Windows图形界面(在此感谢F大的成果)。极大的降低了使用门槛，并将使用变得更加简单有效率。</p>
 <p>但是clash的核心是策略分流，这一点不同于之前流行的SSR以及V2ray. 如果使用过Surge或者quantumult的话，对于策略组，分流这些名词就不会陌生了。如果分流没有做好，那么clash的作用并不会得到展现，反而会很糟糕。其实我对与这个并不是很了解，因为牵扯到计算机网络的很多知识，看起来也是一知半解的。最多做到能用的程度因为有了图形界面，它的操作几乎不需要的过多的说明。只需要理解几个点就OK了<br>
 <img src="https://lyuan7.github.io//post-images/1573386519415.png" alt=""></p>
 <ul>
@@ -107,85 +231,59 @@
 <p>clash for windows 支持策略组和规则，非常受欢迎，但是不支持SSR订阅链接。后来有人修改calsh核心文件以支持SSR，并提供一个转换接口。转换接口前期免费使用，随后开始限制使用，仅支持个别机场的订阅链接。发布价格，机场付费600元以获得转换接口的支持。<br>
 作者认为并未收取个人用户费用，凭这一点能站得住脚。因支持的机场逐渐增加，知名度也随之提升，也就被人盯上了。相互之间通过公告进行了不太友好的交流。作者迫于压力决定开源，随着被人肉，个人信息爆出，遂删库。这几乎和当年破娃酱的事情如出一辙。作为旁观者，愤慨之余也只能盼望有一天自己能够改变一些东西。</p>
 <p>再来谈谈关于伸手党和愤青的事情。人类的本质是复读机，这个调侃慢慢成为了事实。在交流群中，往往可以看到一些人无脑发问，即便是将F&amp;Q的文档置顶也难以避免。现在越来越多的交流群已经与最初的设想渐行渐远，这也导致了管理者不得不增加入群的门槛来保证群内的氛围和交流的问题的质量。对于小白用户的不友好也就被伸手党所诟病，并且伸手党的数量是极为巨大的，以讹传讹最终会给予开发者压力，进而导致项目的停止。</p>
+ </p>
+                    </div>
+                </div>
 
-          </div>
-          
-            
-              <div class="mt-6">
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                <div class="row">
+                    <div class="col-md-12 animate-box">
+                        
+                            <div class="next-post">
+                                <div class="next">下一篇</div>
+                                <a href="https://lyuan7.github.io//post/gui-hua">
+                                    <h3 class="post-title">
+                                        规划
+                                    </h3>
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
 
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'f684fb6084935a7e3d98',
-    clientSecret: 'b9d3c4fda854c9b7b2f08f4bc1e9bb6dd9a8ad3b',
-    repo: 'lyuan7.github.io',
-    owner: 'lyuan7',
-    admin: ['lyuan7'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-              </div>
-            
-  
-            
-          
-        </div>
+                <div class="row">
+    <div class="col-md-12 animate-box">
         
-          <div class="w-full md:w-1/3">
-            <div class="mt-6 md:pl-8">
-              <h4 class="text-base font-thin text-gray-700 mb-2">发布时间</h4>
-              <div class="text-lg mb-6">2019-11-10</div>
-              <h4 class="text-base font-thin text-gray-700 mb-2">标签</h4>
-              <div class="mb-6">
-                
-                  <a href="https://lyuan7.github.io//tag/bDemL2UkG" class="py-1 px-4 border-gray-300 border text-sm inline-block text-gray-700 hover:text-gray-900 rounded mr-2 mb-2">学习笔记</a>
-                
-              </div>
-              <h4 class="text-base font-thin text-gray-700 mb-2">阅读时间</h4>
-              <div class="text-lg mb-6">4 min read</div>
-              <h4 class="text-base font-thin text-gray-700 mb-2">相关阅读</h4>
-              <div class="border-b border-gray-400">
-                
+            
+                <div id="gitalk-container"></div>
+            
 
-  
-    
-      
-    
-  
+            
+        
+    </div>
+</div>
 
-  
-
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-
-  <div class="py-6 text-gray-700 text-sm">暂无相关文章</div>
-
-              </div>
             </div>
-          </div>
-        
-      </div>
-      <div class="footer border-gray-400 border-t pt-6 mt-6 sm:mt-8 md:mt-10 mb-20 text-gray-700 text-sm sm:text-base lg:text-lg">
-  
+
+        </article>
+    </div>
+</div>
+
+    
+
+    <!-- 返回顶部 -->
+    <div class="back-to-top">
+    
+    <a href="#top" class="hidden-xs hidden-sm"><i class="fa fa-paper-plane"></i></a>
+</div>
+
+<div class="post-toc animated fadeInRight hidden-xs hidden-sm" style="display: none;">
+    
+</div>
+
+
+    
+<footer id="fh5co-footer">
+  <p>
 本站已稳定运行了
 <strong><script language="JavaScript" type="text/javascript">
 var urodz= new Date("9/25/2018");
@@ -195,12 +293,85 @@ var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
 document.write(+dni)
 </script>
 </strong>天
+</p>
+</footer>
 
-</div>
-    </div>
-  </div>
-  <script>
-    Prism.highlightAll()
-  </script>
+
+    <!-- jQuery -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
+    
+</script>
+
+
+
+    
+        <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+        <script>
+
+            var gitalk = new Gitalk({
+                clientID: 'f684fb6084935a7e3d98',
+                clientSecret: 'b9d3c4fda854c9b7b2f08f4bc1e9bb6dd9a8ad3b',
+                repo: 'lyuan7.github.io',
+                owner: 'lyuan7',
+                admin: ['lyuan7'],
+                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+                distractionFreeMode: false  // Facebook-like distraction free mode
+            })
+
+            gitalk.render('gitalk-container')
+
+        </script>
+    
+
+    
+
+
+
+
 </body>
 </html>

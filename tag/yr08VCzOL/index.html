@@ -1,129 +1,230 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title></title>
-<link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<script src="https://lyuan7.github.io//media/script.js"></script>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
+<title>Lyuan7</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="&lt;span id=&#39;dongmanjuzi&#39;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&#39;dongmanlaiyuan&#39;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&#39;get&#39;, &#39;https://v1.hitokoto.cn/?c=a&amp;encode=json&#39;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&#39;dongmanjuzi&#39;).innerText = dataAmine.hitokoto;
+            document.getElementById(&#39;dongmanlaiyuan&#39;).innerText = &#39;——&#39; + &#39;《&#39; + dataAmine.from+ &#39;》&#39;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;"/>
+<meta name="keywords" content="&lt;span id=&#39;dongmanjuzi&#39;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&#39;dongmanlaiyuan&#39;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&#39;get&#39;, &#39;https://v1.hitokoto.cn/?c=a&amp;encode=json&#39;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&#39;dongmanjuzi&#39;).innerText = dataAmine.hitokoto;
+            document.getElementById(&#39;dongmanlaiyuan&#39;).innerText = &#39;——&#39; + &#39;《&#39; + dataAmine.from+ &#39;》&#39;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;"/>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico">
+
+<link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
+
+<!-- Modernizr JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://lyuan7.github.io//media/scripts/_vendors/respond.min.js"></scripts>
+<![endif]-->
+
+<!-- Comment -->
+
+
+
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
 
 </head>
 <body>
-  <div class="antialiased">
-    <div class="max-w-5xl mx-auto px-6 md:px-8">
-      <div class="flex justify-between items-center mt-10">
-  <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-900 font-medium md:font-normal leading-none">
-    <a href="https://lyuan7.github.io/">Lyuan7</a>
-  </h1>
-  <div class="block lg:hidden" id="thumb-menu">
-    <button id="thumb-open" type="button" class="block">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6H22V7H2V6ZM2 12H22V13H2V12ZM22 18H2V19H22V18Z" class="fill-current text-gray-900"></path></svg>
-    </button>
-    <button id="thumb-close" type="button" class="hidden">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L20 20M20 4L4 20" class="" stroke="#1A202C"></path></svg>
-    </button>
-  </div>
-</div>
-<div id="nav-list" class="lg:block hidden">
-  <div class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 mt-10 text-gray-700 font-medium lg:text-lg">
-    <div class="lg:flex -mb-px">
-      
-        
-          <a href="/" class="nav-link">首页</a>
-        
-      
-        
-          <a href="/archives" class="nav-link">归档</a>
-        
-      
-        
-          <a href="/tags" class="nav-link">标签</a>
-        
-      
-        
-          <a href="/post/about" class="nav-link">关于</a>
-        
-      
+<div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
+    </a>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://lyuan7.github.io//media/images/avatar.png" alt="Lyuan7"
+                 class="img-responsive">
+        </figure>
+        <a href="https://lyuan7.github.io//post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>Lyuan7</h2>
+        <p>&lt;span id=&#39;dongmanjuzi&#39;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&#39;dongmanlaiyuan&#39;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&#39;get&#39;, &#39;https://v1.hitokoto.cn/?c=a&amp;encode=json&#39;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&#39;dongmanjuzi&#39;).innerText = dataAmine.hitokoto;
+            document.getElementById(&#39;dongmanlaiyuan&#39;).innerText = &#39;——&#39; + &#39;《&#39; + dataAmine.from+ &#39;》&#39;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
     </div>
-    <div class="lg:flex">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      <a href="https://lyuan7.github.io//atom.xml" class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900" target="_blank">
-        <div>RSS</div>
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 -mt-px"><path d="M16.5 13V18.5H6.5V8.5H12" stroke="#4A5568"></path> <path d="M10 15L18.5 6.5" stroke="#4A5568"></path> <path d="M14 6.5H18.5V11" stroke="#4A5568"></path></svg>
-      </a>
+
+    <div class="fh5co-menu">
+
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://lyuan7.github.io//tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://lyuan7.github.io//tag/GtPTOJJeN">生活</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/C5g19vMWg">杂谈</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/bDemL2UkG">学习笔记</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/yr08VCzOL">Gridea</a></li>
+                
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-      <div class="mb-20 md:flex mt-10 lg:mt-6 md:border-t md:border-gray-400 md:pt-2 lg:border-t-0 lg:pt-0">
-        <div class="w-full md:w-2/3">
-  <div class="mt-6 lg:mt-10 border-b border-gray-400">
+
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a href="/"
+                        
+                        >
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives"
+                        
+                        >
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags"
+                        
+                        >
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/post/about"
+                        
+                        >
+                            关于
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a href="https://lyuan7.github.io/">Lyuan7 </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container-fluid">
+
+  <div class="col-lg-12 col-md-12 text-center tag-title">
+      <i class="fa fa-tag"></i> 标签: <h3>Gridea</h3>
+  </div>
+
+  <div class="row fh5co-post-entry">
+
     
-      <div class="border-t border-gray-400 py-6 sm:py-8 lg:py-10">
-        <div class="md:flex items-center justify-between">
-          <div>
-            <h3 class="text-gray-900 sm:text-lg lg:text-xl">
-              <a href="https://lyuan7.github.io//post/hello-gridea" class="hover:underline">Hello Gridea</a>
-            </h3>
-            <div class="flex flex-wrap text-gray-700 text-sm sm:text-base lg:text-lg mt-2 sm:mt-3 lg:mt-3">
-                
-                  
-                    <a href="https://lyuan7.github.io//tag/yr08VCzOL" class="hover:underline hover:text-gray-900">Gridea</a>
-                  
-                
+      <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box article-box" style="height: 25em;">
+        <figure class="img-box">
+          <a href="https://lyuan7.github.io//post/hello-gridea">
+            
+              <img data-original="https://lyuan7.github.io//post-images/hello-gridea.png" alt="Hello Gridea" class="img-responsive img-rounded lazy">
+            
+          </a>
+        </figure>
+        <span class="fh5co-meta">
+          
+            <div class="tag-container">
               
-              <div class="mx-2 text-gray-500">•</div>
-              <div>2018-12-12</div>
-              <div class="mx-2 text-gray-500">•</div>
-              <div>2 min read</div>
-            </div>
-          </div>
-          
-            <div class="md:pl-2 mt-4 md:mt-0">
-              <a href="https://lyuan7.github.io//post/hello-gridea">
-                <img class="h-32 md:w-40 w-full object-cover rounded-sm" src="https://lyuan7.github.io//post-images/hello-gridea.png" alt="Hello Gridea">
-              </a>
+                <a href="https://lyuan7.github.io//tag/yr08VCzOL" class="tag">Gridea, </a>
+              
             </div>
           
-        </div>
-      </div>
+        </span>
+        <h3 class="fh5co-article-title">
+          <a href="https://lyuan7.github.io//post/hello-gridea">Hello Gridea</a>
+        </h3>
+        <span class="fh5co-meta fh5co-date">2018-12-12</span>
+      </article>
     
+    <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+
   </div>
-  <div class="mt-6 flex justify-between">
+
+  <div class="pagination-box animate-box">
     
     
   </div>
 </div>
-        <div class="w-full md:w-1/3 md:pl-8">
-          <div class="text-base font-thin text-gray-700 mb-2 mt-6 md:mt-8">当前标签</div>
-          <div>
-            <h1 class="text-2xl">Gridea</h1>
-          </div>
-        </div>
-      </div>
-      <div class="footer border-gray-400 border-t pt-6 mt-6 sm:mt-8 md:mt-10 mb-20 text-gray-700 text-sm sm:text-base lg:text-lg">
-  
+
+
+<footer id="fh5co-footer">
+  <p>
 本站已稳定运行了
 <strong><script language="JavaScript" type="text/javascript">
 var urodz= new Date("9/25/2018");
@@ -133,9 +234,62 @@ var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
 document.write(+dni)
 </script>
 </strong>天
+</p>
+</footer>
 
-</div>
-    </div>
-  </div>
+
+<!-- jQuery -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
+    
+</script>
+
+
+
+
 </body>
 </html>
