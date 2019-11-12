@@ -1,105 +1,130 @@
-<html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title></title>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lyuan7</title>
+<meta name="description" content="<span id='dongmanjuzi'>正在加载...</span><br/>
+<span id='dongmanlaiyuan'></span>
+<script>
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open('get', 'https://v1.hitokoto.cn/?c=a&encode=json');
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById('dongmanjuzi').innerText = dataAmine.hitokoto;
+            document.getElementById('dongmanlaiyuan').innerText = '——' + '《' + dataAmine.from+ '》';
+        }
+    };
+    xhrAmine.send();
+</script>" />
+<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico?v=1573545280048">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 <link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<script src="https://lyuan7.github.io//media/script.js"></script>
+<link rel="alternate" type="application/atom+xml" title="Lyuan7 - Atom Feed" href="https://lyuan7.github.io//atom.xml">
 
-    
 
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title></title>
-<link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<script src="https://lyuan7.github.io//media/script.js"></script>
 
-    
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://lyuan7.github.io/">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://lyuan7.github.io//images/avatar.png?v=1573545280048" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Lyuan7</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%E7%9A%84%E8%AF%9D">写在前面的话</a></li>
+<li><a href="#%E5%9B%B0%E6%83%91">困惑</a></li>
+<li><a href="#%E5%8F%8D%E6%80%9D">反思</a></li>
+<li><a href="#%E8%A7%84%E5%88%92">规划</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-  <script src="https://lyuan7.github.io//media/prism.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-</head>
-<body>
-  <div class="antialiased">
-    <div class="max-w-5xl mx-auto px-6 md:px-8">
-      <div class="flex justify-between items-center mt-10">
-  <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-900 font-medium md:font-normal leading-none">
-    <a href="https://lyuan7.github.io/">Lyuan7</a>
-  </h1>
-  <div class="block lg:hidden" id="thumb-menu">
-    <button id="thumb-open" type="button" class="block">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6H22V7H2V6ZM2 12H22V13H2V12ZM22 18H2V19H22V18Z" class="fill-current text-gray-900"></path></svg>
-    </button>
-    <button id="thumb-close" type="button" class="hidden">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L20 20M20 4L4 20" class="" stroke="#1A202C"></path></svg>
-    </button>
-  </div>
-</div>
-<div id="nav-list" class="lg:block hidden">
-  <div class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 mt-10 text-gray-700 font-medium lg:text-lg">
-    <div class="lg:flex -mb-px">
+          </div>
+        </div>
       
-        
-          <a href="/" class="nav-link">首页</a>
-        
-      
-        
-          <a href="/archives" class="nav-link">归档</a>
-        
-      
-        
-          <a href="/tags" class="nav-link">标签</a>
-        
-      
-        
-          <a href="/post/about" class="nav-link">关于</a>
-        
-      
-    </div>
-    <div class="lg:flex">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          <a href="https://t.me/Lyuan7" class="block lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900" target="_blank">
-            <div>Telegram</div>
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 -mt-px"><path d="M16.5 13V18.5H6.5V8.5H12" stroke="#4A5568"></path> <path d="M10 15L18.5 6.5" stroke="#4A5568"></path> <path d="M14 6.5H18.5V11" stroke="#4A5568"></path></svg>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      <a href="https://lyuan7.github.io//atom.xml" class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900" target="_blank">
-        <div>RSS</div>
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 -mt-px"><path d="M16.5 13V18.5H6.5V8.5H12" stroke="#4A5568"></path> <path d="M10 15L18.5 6.5" stroke="#4A5568"></path> <path d="M14 6.5H18.5V11" stroke="#4A5568"></path></svg>
-      </a>
     </div>
   </div>
 </div>
-      <div class="mb-20 md:flex mt-10 lg:mt-6 md:border-t md:border-gray-400 md:pt-2 lg:border-t-0 lg:pt-0">
-        <div class="w-full md:w-2/3 mt-6">
-          <h1 class="text-4xl">规划</h1>
-          
-            <img class="max-w-full mt-6 rounded-sm" src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/42 (3).jpg" alt="">
-          
-          <div class="mt-6 lg:mt-10 post-content">
-            <h3 id="写在前面的话">写在前面的话</h3>
+
+<div class="menu-container">
+  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.2s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.4s">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">
+本站已稳定运行了
+<strong><script language="JavaScript" type="text/javascript">
+var urodz= new Date("9/25/2018");
+var now = new Date();
+var ile = now.getTime() - urodz.getTime();
+var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+document.write(+dni)
+</script>
+</strong>天
+</div>
+    <a class="rss" href="https://lyuan7.github.io//atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">规划</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2019-11-10 / 6 min read
+        </div>
+        
+          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/42 (3).jpg" alt="">
+        
+        <div class="post-content yue">
+          <h3 id="写在前面的话">写在前面的话</h3>
 <p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
 <!-- more -->
 <h3 id="困惑">困惑</h3>
@@ -119,11 +144,42 @@
 <p>最后，还是对时间的把控。就目前而言，存在中午12：00-1：30与晚上9：30-11：00的真空期。主要还是因为舍友的原因。在晚上的真空期，我选择写一些总结和对于生活的杂谈。中午的真空期，我更偏向于午饭后在校园散步，或者在教室继续学习。有时候对于时间的把控并不是那么的准确，懈怠的情绪偶尔会迸发出来。</p>
 <p>我深刻的感受到了学习氛围的重要性，宿舍学习并不可取，至少对于绝大多数人而言。就拿今儿中午的一件事情来说吧：中午10：50分，在自习室外休息的我看到了tg上有人推送了关于订阅链接转换的API，关于这个问题，我在Google上搜寻了好久也没有得到答案。当即回到屋内，准备收拾东西走人。但是这与我平时的日程安排有些冲突，犹豫了片刻后决定回去捣鼓。后来作为一个新手，外加上我想DIY一份个人专属的策略分流文件，花费了一个下午的时间。晚上的自习时间也困得一批。无奈回到宿舍。</p>
 
-          </div>
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://lyuan7.github.io//tag/GtPTOJJeN">
+            <span class="flex-auto">生活</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
           
-            
-              <div class="mt-6">
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+            <div class="prev-post">
+              <a href="https://lyuan7.github.io//post/clash-de-shi-yong-ji-yi-xie-gan-hong">
+                <h3 class="post-title">
+                  <i class="remixicon-arrow-left-line"></i>
+                  clash的使用及一些感触
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://lyuan7.github.io//post/hello-gridea">
+                <h3 class="post-title">
+                  Hello Gridea
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -144,77 +200,112 @@
 
 </script>
 
-              </div>
-            
-  
-            
           
-        </div>
+
+          
         
-          <div class="w-full md:w-1/3">
-            <div class="mt-6 md:pl-8">
-              <h4 class="text-base font-thin text-gray-700 mb-2">发布时间</h4>
-              <div class="text-lg mb-6">2019-11-10</div>
-              <h4 class="text-base font-thin text-gray-700 mb-2">标签</h4>
-              <div class="mb-6">
-                
-                  <a href="https://lyuan7.github.io//tag/GtPTOJJeN" class="py-1 px-4 border-gray-300 border text-sm inline-block text-gray-700 hover:text-gray-900 rounded mr-2 mb-2">生活</a>
-                
-              </div>
-              <h4 class="text-base font-thin text-gray-700 mb-2">阅读时间</h4>
-              <div class="text-lg mb-6">6 min read</div>
-              <h4 class="text-base font-thin text-gray-700 mb-2">相关阅读</h4>
-              <div class="border-b border-gray-400">
-                
 
-  
-    
-      
-        
-        <div class="border-t border-gray-400 py-6">
-          <a href="https://lyuan7.github.io//post/lu-xun-yu-kong-yi-ji" class="text-lg hover:underline my-2 inline-block">鲁迅与孔乙己</a>
-        </div>
-      
-    
-  
-
-  
-    
-      
-    
-  
-
-  
-
-  
-    
-      
-    
-  
-
-
-              </div>
-            </div>
-          </div>
-        
       </div>
-      <div class="footer border-gray-400 border-t pt-6 mt-6 sm:mt-8 md:mt-10 mb-20 text-gray-700 text-sm sm:text-base lg:text-lg">
-  
-本站已稳定运行了
-<strong><script language="JavaScript" type="text/javascript">
-var urodz= new Date("9/25/2018");
-var now = new Date();
-var ile = now.getTime() - urodz.getTime();
-var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-document.write(+dni)
-</script>
-</strong>天
-
-</div>
     </div>
-  </div>
-  <script>
-    Prism.highlightAll()
-  </script>
-</body>
+
+    <script src="https://lyuan7.github.io//media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+  </body>
 </html>
