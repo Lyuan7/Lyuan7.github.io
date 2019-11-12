@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyuan7.github.io/</id>
     <title>Lyuan7</title>
-    <updated>2019-11-12T01:25:08.437Z</updated>
+    <updated>2019-11-12T01:32:34.659Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyuan7.github.io/"/>
     <link rel="self" href="https://lyuan7.github.io//atom.xml"/>
-    <subtitle>寻求内心深处的宁静</subtitle>
+    <subtitle>&lt;span id=&apos;dongmanjuzi&apos;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
+&lt;span id=&apos;dongmanlaiyuan&apos;&gt;&lt;/span&gt;
+&lt;script&gt;
+    let xhrAmine = new XMLHttpRequest();
+    xhrAmine.open(&apos;get&apos;, &apos;https://v1.hitokoto.cn/?c=a&amp;encode=json&apos;);
+    xhrAmine.onreadystatechange = function () {
+        if (xhrAmine.readyState === 4) {
+            let dataAmine = JSON.parse(xhrAmine.responseText);
+            document.getElementById(&apos;dongmanjuzi&apos;).innerText = dataAmine.hitokoto;
+            document.getElementById(&apos;dongmanlaiyuan&apos;).innerText = &apos;——&apos; + &apos;《&apos; + dataAmine.from+ &apos;》&apos;;
+        }
+    };
+    xhrAmine.send();
+&lt;/script&gt;</subtitle>
     <logo>https://lyuan7.github.io//images/avatar.png</logo>
     <icon>https://lyuan7.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Lyuan7</rights>
