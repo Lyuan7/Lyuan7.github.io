@@ -564,6 +564,9 @@ video {
 .bg-black {
   background-color: #000;
 }
+.bg-white {
+  background-color: #f5f4f1;
+}
 .bg-gray-100 {
   background-color: #f7fafc;
 }
