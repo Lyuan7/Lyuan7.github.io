@@ -1,103 +1,181 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <title>Lyuan7</title>
-<meta name="description" content="寻求内心深处的宁静" />
-<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico?v=1573519432357">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="寻求内心深处的宁静"/>
+<meta name="keywords" content="寻求内心深处的宁静"/>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico">
 
 <link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Lyuan7 - Atom Feed" href="https://lyuan7.github.io//atom.xml">
+
+<!-- Modernizr JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://lyuan7.github.io//media/scripts/_vendors/respond.min.js"></scripts>
+<![endif]-->
+
+<!-- Comment -->
+
+    
+        <link href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css" rel="stylesheet">
+    
+
+    
 
 
 
-  </head>
-  <body>
-    <div id="app" class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://lyuan7.github.io/">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://lyuan7.github.io//images/avatar.png?v=1573519432357" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Lyuan7</h1>
-      </div>
-      
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            文章目录
-          </p>
-          <div class="toc-container hidden lg:block">
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
+    </a>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://lyuan7.github.io//media/images/avatar.png" alt="Lyuan7"
+                 class="img-responsive">
+        </figure>
+        <a href="https://lyuan7.github.io//post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>Lyuan7</h2>
+        <p>寻求内心深处的宁静</p>
+        <ul class="fh5co-social">
             
-          </div>
-        </div>
-      
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
     </div>
-  </div>
+
+    <div class="fh5co-menu">
+
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://lyuan7.github.io//tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://lyuan7.github.io//tag/C5g19vMWg">杂谈</a></li>
+                
+                    <li><a href="https://lyuan7.github.io//tag/yr08VCzOL">Gridea</a></li>
+                
+            </ul>
+        </div>
+    </div>
 </div>
 
-<div class="menu-container">
-  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="/" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">
-本站已稳定运行了
-<strong><script language="JavaScript" type="text/javascript">
-var urodz= new Date("9/25/2018");
-var now = new Date();
-var ile = now.getTime() - urodz.getTime();
-var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-document.write(+dni)
-</script>
-</strong>天
-</div>
-    <a class="rss" href="https://lyuan7.github.io//atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">clash的使用及一些感触</h1>
-        <div class="text-sm text-gray-700 lg:my-8">
-          2019-11-10 / 4 min read
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a href="/"
+                        
+                        >
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives"
+                        
+                        >
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags"
+                        
+                        >
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/post/about"
+                        
+                        >
+                            关于
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a href="https://lyuan7.github.io/">Lyuan7 </a>
+                </h1>
+            </div>
         </div>
-        
-          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/68375845_p0.png" alt="">
-        
-        <div class="post-content yue">
-          <p>这几天一直在捣鼓clash的使用方法，clash是一款类 Surge 的产品。在原生使用的过程中只能通过命令行进行操控，门槛高，不方便。后来有了 ClashX在Mac端的图形界面，以及Fndroid开发的Clash for Windows图形界面(在此感谢F大的成果)。极大的降低了使用门槛，并将使用变得更加简单有效率。</p>
+    </div>
+</header>
+
+
+    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
+
+    <!-- 等gridea出自定义页面功能再优化一下 -->
+    
+        <div class="container-fluid">
+    <div class="row fh5co-post-entry single-entry">
+        <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+            <figure class="animate-box">
+                
+                    <img src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/68375845_p0.png" alt="clash的使用及一些感触" class="img-responsive">
+                
+            </figure>
+            <span class="fh5co-meta animate-box">
+                
+                    <div class="tag-container">
+                        
+                            <a href="https://lyuan7.github.io//tag/C5g19vMWg" class="tag">杂谈, </a>
+                        
+                    </div>
+                
+            </span>
+            <h2 class="fh5co-article-title animate-box">clash的使用及一些感触</h2>
+            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
+                <li>2019-11-10</li>
+                <li>929字</li>
+                <li>4 min read</li>
+            </ol>
+
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                <div class="row">
+                    <div class="col-md-12 animate-box post-content">
+                        <p> <p>这几天一直在捣鼓clash的使用方法，clash是一款类 Surge 的产品。在原生使用的过程中只能通过命令行进行操控，门槛高，不方便。后来有了 ClashX在Mac端的图形界面，以及Fndroid开发的Clash for Windows图形界面(在此感谢F大的成果)。极大的降低了使用门槛，并将使用变得更加简单有效率。</p>
 <p>但是clash的核心是策略分流，这一点不同于之前流行的SSR以及V2ray. 如果使用过Surge或者quantumult的话，对于策略组，分流这些名词就不会陌生了。如果分流没有做好，那么clash的作用并不会得到展现，反而会很糟糕。其实我对与这个并不是很了解，因为牵扯到计算机网络的很多知识，看起来也是一知半解的。最多做到能用的程度因为有了图形界面，它的操作几乎不需要的过多的说明。只需要理解几个点就OK了<br>
 <img src="https://lyuan7.github.io//post-images/1573386519415.png" alt=""></p>
 <ul>
@@ -110,169 +188,147 @@ document.write(+dni)
 <p>clash for windows 支持策略组和规则，非常受欢迎，但是不支持SSR订阅链接。后来有人修改calsh核心文件以支持SSR，并提供一个转换接口。转换接口前期免费使用，随后开始限制使用，仅支持个别机场的订阅链接。发布价格，机场付费600元以获得转换接口的支持。<br>
 作者认为并未收取个人用户费用，凭这一点能站得住脚。因支持的机场逐渐增加，知名度也随之提升，也就被人盯上了。相互之间通过公告进行了不太友好的交流。作者迫于压力决定开源，随着被人肉，个人信息爆出，遂删库。这几乎和当年破娃酱的事情如出一辙。作为旁观者，愤慨之余也只能盼望有一天自己能够改变一些东西。</p>
 <p>再来谈谈关于伸手党和愤青的事情。人类的本质是复读机，这个调侃慢慢成为了事实。在交流群中，往往可以看到一些人无脑发问，即便是将F&amp;Q的文档置顶也难以避免。现在越来越多的交流群已经与最初的设想渐行渐远，这也导致了管理者不得不增加入群的门槛来保证群内的氛围和交流的问题的质量。对于小白用户的不友好也就被伸手党所诟病，并且伸手党的数量是极为巨大的，以讹传讹最终会给予开发者压力，进而导致项目的停止。</p>
+ </p>
+                    </div>
+                </div>
 
-        </div>
+                <div class="row">
+                    <div class="col-md-12 animate-box">
+                        
+                            <div class="next-post">
+                                <div class="next">下一篇</div>
+                                <a href="https://lyuan7.github.io//post/gui-hua">
+                                    <h3 class="post-title">
+                                        规划
+                                    </h3>
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
 
+                <div class="row">
+    <div class="col-md-12 animate-box">
         
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://lyuan7.github.io//tag/C5g19vMWg">
-            <span class="flex-auto">杂谈</span>
-          </a>
+            
+                <div id="gitalk-container"></div>
+            
+
+            
         
-
-
-        <div class="flex justify-between py-8">
-          
-            <div class="prev-post">
-              <a href="https://lyuan7.github.io//post/markdown">
-                <h3 class="post-title">
-                  <i class="remixicon-arrow-left-line"></i>
-                  Markdown
-                </h3>
-              </a>
-            </div>
-          
-
-          
-            <div class="next-post">
-              <a href="https://lyuan7.github.io//post/gui-hua">
-                <h3 class="post-title">
-                  规划
-                  <i class="remixicon-arrow-right-line"></i>
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'f684fb6084935a7e3d98',
-    clientSecret: 'b9d3c4fda854c9b7b2f08f4bc1e9bb6dd9a8ad3b',
-    repo: 'lyuan7.github.io',
-    owner: 'lyuan7',
-    admin: ['lyuan7'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-      </div>
     </div>
+</div>
 
-    <script src="https://lyuan7.github.io//media/prism.js"></script>  
-<script>
+            </div>
 
-Prism.highlightAll()
+        </article>
+    </div>
+</div>
 
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+    
 
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
+    <!-- 返回顶部 -->
+    <div class="back-to-top">
+    
+    <a href="#top" class="hidden-xs hidden-sm"><i class="fa fa-paper-plane"></i></a>
+</div>
 
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
+<div class="post-toc animated fadeInRight hidden-xs hidden-sm" style="display: none;">
+    
+</div>
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+    
+<footer id="fh5co-footer">
+  <p>
+本站已稳定运行了
+<strong><script language="JavaScript" type="text/javascript">
+var urodz= new Date("9/25/2018");
+var now = new Date();
+var ile = now.getTime() - urodz.getTime();
+var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+document.write(+dni)
+</script>
+</strong>天
+</p>
+</footer>
 
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
+
+    <!-- jQuery -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://lyuan7.github.io//media/scripts/_vendors/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
     });
 
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
+    
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
+    
 </script>
-  
-  </body>
+
+
+
+    
+        <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+        <script>
+
+            var gitalk = new Gitalk({
+                clientID: 'f684fb6084935a7e3d98',
+                clientSecret: 'b9d3c4fda854c9b7b2f08f4bc1e9bb6dd9a8ad3b',
+                repo: 'lyuan7.github.io',
+                owner: 'lyuan7',
+                admin: ['lyuan7'],
+                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+                distractionFreeMode: false  // Facebook-like distraction free mode
+            })
+
+            gitalk.render('gitalk-container')
+
+        </script>
+    
+
+    
+
+
+
+
+</body>
 </html>
