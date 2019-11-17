@@ -44,46 +44,9 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            <span id='dongmanjuzi'>正在加载...</span><br/>
-<span id='dongmanlaiyuan'></span>
-<script>
-    let xhrAmine = new XMLHttpRequest();
-    xhrAmine.open('get', 'https://v1.hitokoto.cn/?c=a&encode=json');
-    xhrAmine.onreadystatechange = function () {
-        if (xhrAmine.readyState === 4) {
-            let dataAmine = JSON.parse(xhrAmine.responseText);
-            document.getElementById('dongmanjuzi').innerText = dataAmine.hitokoto;
-            document.getElementById('dongmanlaiyuan').innerText = '——' + '《' + dataAmine.from+ '》';
-        }
-    };
-    xhrAmine.send();
-</script>
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-                <a href="https://t.me/Lyuan7" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-telegram-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
+          <div class="toc-container hidden lg:block">
             
           </div>
         </div>
@@ -134,33 +97,52 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="remixicon-bookmark-line"></i> 学习笔记
-        </h2>
-        
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-      <a href="https://lyuan7.github.io//post/clash-de-shi-yong-ji-yi-xie-gan-hong" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/68375845_p0.png'">
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">友人帐</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2019-11-13 / 0 min read
         </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://lyuan7.github.io//post/clash-de-shi-yong-ji-yi-xie-gan-hong">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">clash的使用及一些感触</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2019-11-10 / 4 min read</div>
-    </div>
-  </section>
+        <div class="post-content yue">
+          
+        </div>
 
-        <div class="pagination-container animated fadeIn">
-  
-  
-</div>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+
+          
+        </div>
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'f684fb6084935a7e3d98',
+    clientSecret: 'b9d3c4fda854c9b7b2f08f4bc1e9bb6dd9a8ad3b',
+    repo: 'lyuan7.github.io',
+    owner: 'lyuan7',
+    admin: ['lyuan7'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
 
       </div>
     </div>
