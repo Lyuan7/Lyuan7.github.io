@@ -2,127 +2,105 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lyuan7</title>
-<meta name="description" content="<span id='dongmanjuzi'>正在加载...</span><br/>
-<span id='dongmanlaiyuan'></span>
-<script>
-    let xhrAmine = new XMLHttpRequest();
-    xhrAmine.open('get', 'https://v1.hitokoto.cn/?c=a&encode=json');
-    xhrAmine.onreadystatechange = function () {
-        if (xhrAmine.readyState === 4) {
-            let dataAmine = JSON.parse(xhrAmine.responseText);
-            document.getElementById('dongmanjuzi').innerText = dataAmine.hitokoto;
-            document.getElementById('dongmanlaiyuan').innerText = '——' + '《' + dataAmine.from+ '》';
-        }
-    };
-    xhrAmine.send();
-</script>" />
-<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico?v=1573991743787">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+<title>规划 | Lyuan</title>
+<meta name="description" content="❤️寻求内心深处的宁静❤️" />
+<link rel="shortcut icon" href="https://lyuan7.github.io//favicon.ico?v=1574074435849">
 <link rel="stylesheet" href="https://lyuan7.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Lyuan7 - Atom Feed" href="https://lyuan7.github.io//atom.xml">
 
-
-
+<script src="https://lyuan7.github.io//media/js/jquery.min.js"></script>
+<script src="https://lyuan7.github.io//media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://lyuan7.github.io//media/js/masonry.pkgd.min.js"></script>
+<script src="https://lyuan7.github.io//media/js/aos.js"></script>
+<script src="https://lyuan7.github.io//media/js/pace.min.js"></script>
+<script src="https://lyuan7.github.io//media/js/functions.js"></script>
+    <script src="https://lyuan7.github.io//media/js/waterfall.min.js"></script>
+    <script src="https://lyuan7.github.io//media/js/prism.min.js"></script>
+    
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+    
   </head>
   <body>
-    <div id="app" class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://lyuan7.github.io/">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://lyuan7.github.io//images/avatar.png?v=1573991743787" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Lyuan7</h1>
-      </div>
-      
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            文章目录
-          </p>
-          <div class="toc-container hidden lg:block">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%E7%9A%84%E8%AF%9D">写在前面的话</a></li>
-<li><a href="#%E5%9B%B0%E6%83%91">困惑</a></li>
-<li><a href="#%E5%8F%8D%E6%80%9D">反思</a></li>
-<li><a href="#%E8%A7%84%E5%88%92">规划</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://lyuan7.github.io/"><img src="https://lyuan7.github.io//media/images/logo.png" alt=""></a>
+            </div>
+            <!-- start: .main-nav -->
 
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                
+                  <li class=""><a href="https://lyuan7.github.io/" class="menu">首页</a></li>
+                
+                
+                  <li class="" >
+                    <a href="https://lyuan7.github.io//archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://lyuan7.github.io//tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="https://lyuan7.github.io//post/link/" class="menu">
+                      友链
+                    </a>
+                  </li>
+                
+              </ul>
+            </nav>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/42 (3).jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" datetime="2019-11-10">
+                <i class="fa fa-calendar"></i>2019-11-10
+               </time>
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://lyuan7.github.io//tag/GtPTOJJeN" class="ctag ctag-0 ctag-GtPTOJJeN" aria-label="">生活</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">规划</h1>
+            </div>
           </div>
-        </div>
-      
-    </div>
-  </div>
-</div>
+        </div>  
 
-<div class="menu-container">
-  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="https://lyuan7.github.io/" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://lyuan7.github.io//archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="https://lyuan7.github.io//tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://lyuan7.github.io//post/link/" class="menu" style="animation-delay: 0.8s">
-          友链
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">❤️寻求内心深处的宁静❤️</div>
-    <a class="rss" href="https://lyuan7.github.io//atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">规划</h1>
-        <div class="text-sm text-gray-700 lg:my-8">
-          2019-11-10 / 6 min read
-        </div>
-        
-          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/42 (3).jpg" alt="">
-        
-        <div class="post-content yue">
-          <h3 id="写在前面的话">写在前面的话</h3>
-<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
-<!-- more -->
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
+<!--more-->
 <h3 id="困惑">困惑</h3>
 <p>到目前为止，我并没有因为自己的努力而感觉到目标的明确。相反，我更多是感觉到了理想的遥远。有太多的知识要学习，有太多的东西不理解。当我看到大学四年的课程安排时，我很困惑：如何在这四年学到更多的知识呢？</p>
 <p>我并不是一个有着远大理想的人。相比于报效祖国，我思考更多的是如何独立地生活下去。如果你问我为何要学习计算机，我只能回答：除了兴趣，更多的是妥协与无奈。特别是当你考入了一个不那么好的学校，又处在一个不那么好的专业的时候。</p>
@@ -140,168 +118,207 @@
 <p>最后，还是对时间的把控。就目前而言，存在中午12：00-1：30与晚上9：30-11：00的真空期。主要还是因为舍友的原因。在晚上的真空期，我选择写一些总结和对于生活的杂谈。中午的真空期，我更偏向于午饭后在校园散步，或者在教室继续学习。有时候对于时间的把控并不是那么的准确，懈怠的情绪偶尔会迸发出来。</p>
 <p>我深刻的感受到了学习氛围的重要性，宿舍学习并不可取，至少对于绝大多数人而言。就拿今儿中午的一件事情来说吧：中午10：50分，在自习室外休息的我看到了tg上有人推送了关于订阅链接转换的API，关于这个问题，我在Google上搜寻了好久也没有得到答案。当即回到屋内，准备收拾东西走人。但是这与我平时的日程安排有些冲突，犹豫了片刻后决定回去捣鼓。后来作为一个新手，外加上我想DIY一份个人专属的策略分流文件，花费了一个下午的时间。晚上的自习时间也困得一批。无奈回到宿舍。</p>
 
-        </div>
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
 
-        
-          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://lyuan7.github.io//tag/GtPTOJJeN">
-            <span class="flex-auto">生活</span>
-          </a>
-        
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://l-yuan.oss-cn-shenzhen.aliyuncs.com/img/68375845_p0.png');"></div>
+                 <a href="https://lyuan7.github.io//post/clash-de-shi-yong-ji-yi-xie-gan-hong" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2019-11-10">2019-11-10</time>
+                  <h4 class="title white no-margin">clash的使用及一些感触</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://lyuan7.github.io//media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://lyuan7.github.io//post-images/hello-gridea.png');"></div>
+                 <a href="https://lyuan7.github.io//post/hello-gridea" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2018-12-12">2018-12-12</time>
+                  <h4 class="title white no-margin">Hello Gridea</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://lyuan7.github.io//media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
 
+                <div class="clear"></div>
+            </section>
 
-        <div class="flex justify-between py-8">
-          
-            <div class="prev-post">
-              <a href="https://lyuan7.github.io//post/clash-de-shi-yong-ji-yi-xie-gan-hong">
-                <h3 class="post-title">
-                  <i class="remixicon-arrow-left-line"></i>
-                  clash的使用及一些感触
-                </h3>
-              </a>
-            </div>
-          
+              <div class="clear"></div>
 
-          
-            <div class="next-post">
-              <a href="https://lyuan7.github.io//post/hello-gridea">
-                <h3 class="post-title">
-                  Hello Gridea
-                  <i class="remixicon-arrow-right-line"></i>
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
+              <div id="comments" class="bg-white hosted ">
+              
+              
+                <script type="text/javascript" src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
 
 <script>
-
-  var gitalk = new Gitalk({
-    clientID: 'f684fb6084935a7e3d98',
-    clientSecret: 'b9d3c4fda854c9b7b2f08f4bc1e9bb6dd9a8ad3b',
-    repo: 'lyuan7.github.io',
-    owner: 'lyuan7',
-    admin: ['lyuan7'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-      </div>
-    </div>
-
-    <script src="https://lyuan7.github.io//media/prism.js"></script>  
-<script>
-
-Prism.highlightAll()
-
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
+    var valine = new Valine();
+    valine.init({
+        el: '#comments',
+        appId: 'f5LabVv8MK1K4B42fxo0J4Sa-gzGzoHsz' ,
+        appKey: 'zD7ThddQ6fSgxsea6UgIjDjl',
+        pageSize: 30,
+        placeholder: '既然来了，那就留个痕迹吧~'
     })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
+jQuery(document).ready(function($){
+    $('.vemoji-btn').text('😀');
+    $("#comments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-200}, 600);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
+})
 </script>
+
+                <div class="clear"></div>
+              
+              
+              </div>
+
+              <div class="clear"></div>
+            </div>
+          </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://lyuan7.github.io//tag/GtPTOJJeN" class="ctag ctag-0 ctag-GtPTOJJeN" aria-label="">生活</a>
+                    
+                      <a href="https://lyuan7.github.io//tag/C5g19vMWg" class="ctag ctag-1 ctag-C5g19vMWg" aria-label="">杂谈</a>
+                    
+                      <a href="https://lyuan7.github.io//tag/bDemL2UkG" class="ctag ctag-2 ctag-bDemL2UkG" aria-label="">学习笔记</a>
+                    
+                      <a href="https://lyuan7.github.io//tag/yr08VCzOL" class="ctag ctag-3 ctag-yr08VCzOL" aria-label="">Gridea</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://lyuan7.github.io//images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Lyuan</a></h4>
+                    <p class="founder">❤️寻求内心深处的宁静❤️</p>
+                    <div class="social">
+                      
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                              
+      <a href="https://t.me/Lyuan7" class="translate-effect" target="_blank"><i class="fa fa-telegram"></i></a>
+                               
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+                            
+                         
+</div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="logo">
+          <a href="https://lyuan7.github.io/"><img class="" src="https://lyuan7.github.io//media/images/logo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">Published with <a href="https://gridea.dev/" target="_blank">Gridea</a></p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    <div class="clear"></div>
+
+<script>
+jQuery(document).ready(function($){
+  var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+    var location_href = window.location.href.replace(parse_url,'$3');
+    $('.post-excerpt a:not(:has(img)),.post-content a:not(:has(img)),.author-name a').hover(function() {
+        var this_href = $(this).attr('href');
+        var replace_href = this_href.replace(parse_url,'$3');
+        if ( this_href != replace_href && location_href != replace_href){$(this).attr('target','_blank');}
+    });
+})
+</script>
+
+
+      <script src="https://lyuan7.github.io//media/js/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript">
+       jQuery(document).ready(function($){
+        
+          $("photos img").each(function(){
+              var _a = $("<a></a>").attr("href",this.src);
+              $(this).wrap("<div class='photo'></div>").wrap(_a);
+          })
   
+          var photos = document.querySelector('photos');
+          if(photos){
+            $('img').on('load', function() {
+              waterfall(photos);
+            });
+          }
+          
+          $(window).resize(function() {
+             if(photos){
+                  waterfall(photos);
+            }
+          });
+        
+      });
+      </script>
+
+    </div>
+    <!-- end: #wrapper -->
   </body>
 </html>

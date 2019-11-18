@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyuan7.github.io/</id>
-    <title>Lyuan7</title>
-    <updated>2019-11-17T11:55:47.149Z</updated>
+    <title>Lyuan</title>
+    <updated>2019-11-18T10:55:32.737Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyuan7.github.io/"/>
     <link rel="self" href="https://lyuan7.github.io//atom.xml"/>
-    <subtitle>&lt;span id=&apos;dongmanjuzi&apos;&gt;正在加载...&lt;/span&gt;&lt;br/&gt;
-&lt;span id=&apos;dongmanlaiyuan&apos;&gt;&lt;/span&gt;
-&lt;script&gt;
-    let xhrAmine = new XMLHttpRequest();
-    xhrAmine.open(&apos;get&apos;, &apos;https://v1.hitokoto.cn/?c=a&amp;encode=json&apos;);
-    xhrAmine.onreadystatechange = function () {
-        if (xhrAmine.readyState === 4) {
-            let dataAmine = JSON.parse(xhrAmine.responseText);
-            document.getElementById(&apos;dongmanjuzi&apos;).innerText = dataAmine.hitokoto;
-            document.getElementById(&apos;dongmanlaiyuan&apos;).innerText = &apos;——&apos; + &apos;《&apos; + dataAmine.from+ &apos;》&apos;;
-        }
-    };
-    xhrAmine.send();
-&lt;/script&gt;</subtitle>
+    <subtitle>❤️寻求内心深处的宁静❤️</subtitle>
     <logo>https://lyuan7.github.io//images/avatar.png</logo>
     <icon>https://lyuan7.github.io//favicon.ico</icon>
-    <rights>All rights reserved 2019, Lyuan7</rights>
+    <rights>All rights reserved 2019, Lyuan</rights>
     <entry>
         <title type="html"><![CDATA[鲁迅与孔乙己]]></title>
         <id>https://lyuan7.github.io//post/lu-xun-yu-kong-yi-ji</id>
         <link href="https://lyuan7.github.io//post/lu-xun-yu-kong-yi-ji">
         </link>
         <updated>2019-11-10T12:04:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>之前看《孔乙己》总是从现代的眼光去批判『孔乙己』，说他迂腐，是旧社会的牺牲品。后来听了老师对《孔乙己》一文的分析，有点醍醐灌顶的感觉。遂翻了翻鲁迅先生的生平，重新读了一遍《孔乙己》，对鲁迅愈发的敬重了。</p>
+        <summary type="html"><![CDATA[<p>先前看《孔乙己》总是以现代的眼光去批判，说他迂腐，是旧社会的牺牲品。但在老师对《孔乙己》一文的分析中，顿时醍醐灌顶。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>之前看《孔乙己》总是从现代的眼光去批判『孔乙己』，说他迂腐，是旧社会的牺牲品。后来听了老师对《孔乙己》一文的分析，有点醍醐灌顶的感觉。遂翻了翻鲁迅先生的生平，重新读了一遍《孔乙己》，对鲁迅愈发的敬重了。</p>
+        <content type="html"><![CDATA[<p>先前看《孔乙己》总是以现代的眼光去批判，说他迂腐，是旧社会的牺牲品。但在老师对《孔乙己》一文的分析中，顿时醍醐灌顶。</p>
 ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown]]></title>
+        <id>https://lyuan7.github.io//post/markdown</id>
+        <link href="https://lyuan7.github.io//post/markdown">
+        </link>
+        <updated>2019-11-10T11:50:16.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[clash的使用及一些感触]]></title>
@@ -40,6 +34,10 @@
         <link href="https://lyuan7.github.io//post/clash-de-shi-yong-ji-yi-xie-gan-hong">
         </link>
         <updated>2019-11-10T11:46:18.000Z</updated>
+        <summary type="html"><![CDATA[<p>clash是一款类 Surge 的产品,在原生使用的过程中只能通过命令行进行操控,门槛高,不方便.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>clash是一款类 Surge 的产品,在原生使用的过程中只能通过命令行进行操控,门槛高,不方便.</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[规划]]></title>
@@ -47,11 +45,9 @@
         <link href="https://lyuan7.github.io//post/gui-hua">
         </link>
         <updated>2019-11-10T11:19:38.000Z</updated>
-        <summary type="html"><![CDATA[<h3 id="写在前面的话">写在前面的话</h3>
-<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
+        <summary type="html"><![CDATA[<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h3 id="写在前面的话">写在前面的话</h3>
-<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
+        <content type="html"><![CDATA[<p>这是一篇我对未来学习规划的一篇文章，也是对大一上学期的规划的总结与改变。</p>
 ]]></content>
     </entry>
     <entry>
