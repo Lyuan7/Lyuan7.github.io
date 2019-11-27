@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyuan7.github.io/</id>
     <title>Lyuan</title>
-    <updated>2019-11-27T04:26:11.924Z</updated>
+    <updated>2019-11-27T04:36:06.076Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyuan7.github.io/"/>
     <link rel="self" href="https://lyuan7.github.io//atom.xml"/>
@@ -11,14 +11,14 @@
     <icon>https://lyuan7.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Lyuan</rights>
     <entry>
-        <title type="html"><![CDATA[二叉树]]></title>
-        <id>https://lyuan7.github.io//post/er-cha-shu</id>
-        <link href="https://lyuan7.github.io//post/er-cha-shu">
+        <title type="html"><![CDATA[我和父母间的小事]]></title>
+        <id>https://lyuan7.github.io//post/wo-he-fu-mu-jian-de-xiao-shi</id>
+        <link href="https://lyuan7.github.io//post/wo-he-fu-mu-jian-de-xiao-shi">
         </link>
-        <updated>2019-11-18T12:44:59.000Z</updated>
-        <summary type="html"><![CDATA[<p>树、森林与二叉树的转换</p>
+        <updated>2019-11-27T04:29:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>自从上学后，跟爸妈的联系就不那么频繁了，每隔两周才视频一次。老妈因为要去上海照顾小孙女，这几年就跟老爸分居两地。所以我每次跟老妈聊完就要去找老爸聊，说来也有趣，跟他们聊天的时候，可以很明显的感受到父母关心方面的不同。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>树、森林与二叉树的转换</p>
+        <content type="html"><![CDATA[<p>自从上学后，跟爸妈的联系就不那么频繁了，每隔两周才视频一次。老妈因为要去上海照顾小孙女，这几年就跟老爸分居两地。所以我每次跟老妈聊完就要去找老爸聊，说来也有趣，跟他们聊天的时候，可以很明显的感受到父母关心方面的不同。</p>
 ]]></content>
     </entry>
     <entry>
@@ -27,17 +27,12 @@
         <link href="https://lyuan7.github.io//post/lu-xun-yu-kong-yi-ji">
         </link>
         <updated>2019-11-10T12:04:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>先前看《孔乙己》总是以现代的眼光去批判，说他迂腐，是旧社会的牺牲品。但在老师对《孔乙己》一文的分析中，顿时醍醐灌顶。</p>
+        <summary type="html"><![CDATA[<p>先前看《孔乙己》总是以现代的眼光去批判，说他迂腐，是旧社会的牺牲品。但在老师对《孔乙己》一文的分析中，顿时醍醐灌顶。<br>
+遂翻了翻鲁迅先生的生平，重读一遍《孔乙己》，便对鲁迅愈发的敬重了。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>先前看《孔乙己》总是以现代的眼光去批判，说他迂腐，是旧社会的牺牲品。但在老师对《孔乙己》一文的分析中，顿时醍醐灌顶。</p>
+        <content type="html"><![CDATA[<p>先前看《孔乙己》总是以现代的眼光去批判，说他迂腐，是旧社会的牺牲品。但在老师对《孔乙己》一文的分析中，顿时醍醐灌顶。<br>
+遂翻了翻鲁迅先生的生平，重读一遍《孔乙己》，便对鲁迅愈发的敬重了。</p>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown]]></title>
-        <id>https://lyuan7.github.io//post/markdown</id>
-        <link href="https://lyuan7.github.io//post/markdown">
-        </link>
-        <updated>2019-11-10T11:50:16.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[clash的使用及一些感触]]></title>
